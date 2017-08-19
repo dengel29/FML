@@ -3,5 +3,9 @@
 .input-height {
   font-size: 22;
   text-align: center;
- 
+}
+
+.user-input {
+  width: 100%;
+  margin-bottom: 50rpx;
 }

@@ -9,6 +9,8 @@
     <textarea class="input-height" name="entry" maxlength="-1" />
    </view>
   </view> 
+  
+  <button type="primary" form-type="submit" loading="{{loading}}">Send</button>
 
  </form>
 </view>

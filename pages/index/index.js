@@ -1,14 +1,14 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+
+const AV = require('../../libs/av-weapp-min.js');
+const form = require('../../model/form.js');
+
 Page({
   data: {
-    motto: 'Hello World',
+    stories: [{ story: "Today, i missed my train" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }],
     userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-
   },
   onLoad: function () {
     console.log('onLoad')

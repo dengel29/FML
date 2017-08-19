@@ -8,3 +8,29 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.h1 {
+  font-weight: 800;
+  font-size: 40rpx; 
+}
+
+.h3 {
+  margin-top: 35rpx;
+}
+
+.h1-header {
+  align-content: center;
+  color: white;
+  text-align: center;
+  font-size: 60rpx; 
+  font-weight: bolder;
+  padding: 30px;
+}
+.h1-super-header {
+  align-content: center;
+  color: white;
+  text-align: center;
+  font-size:120rpx; 
+  font-weight: bolder;
+  padding: 30px;
+}

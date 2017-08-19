@@ -4,13 +4,18 @@
   <view class="h1-header">Your Daily F**k Stories</view>
 </view>
 
-<view wx:if="{{stories.lenght == 0}}">No stories</view>
-<view wx:else>
-  <view wx:for="{{stories}}">
-    {{index}}: {{item.story}}
-  </view>
-
-
+<view class="container">
+ <view class="wrap"> 
+  <block wx:for="{{stories}}" wx:for-item="fml" wx:key="objectId">
+   <view class="card">
+    <view class="card-description">
+     <view class="quote">
+     asdasdasdasdasdasd
+     </view>
+    </view>
+   </view>
+  </block>
+ </view>
 </view>
 
 

@@ -1,1 +1,7 @@
 /* pages/submit/submit.wxss */
+
+.input-height {
+  font-size: 22;
+  text-align: center;
+ 
+}

@@ -46,9 +46,18 @@ Page({
 
       // LeanCloud Permissions
       //
+      var acl = new AV.ACL();
+      acl.setPublicReadAccess(true);
+      acl.setPublicWriteAccess(true);
+
       new Form({
         story: entry,
-      })
+      }).setACL(acl).save().then(function (todo) {
+        console.log('objectId is ' + todo.id);
+      }, function (error) {
+        console.error(error);
+      });;
+
       // Redirect user if form submitted
       wx.reLaunch({
         url: '/pages/index/index'

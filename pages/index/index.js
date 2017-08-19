@@ -15,11 +15,19 @@ Page({
   onLoad: function () {
     var objects = []
     console.log('onLoad')
-    var that = this
-    AV.Object.fetchAll(objects).then(function (objects){
+    var that = this;
+    
+    var query = new AV.Query('Form');
+    
+    query.find().then(function (objects){
       that.setData({
         stories:objects
       })
+      console.log("fetched something")
+      console.log(objects)
+    }, function (error) {
+      // 异常处理
+      console.log("Something wrong")
     })
     
     //调用应用实例的方法获取全局数据

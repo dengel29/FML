@@ -1,28 +1,32 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/submit/submit"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "FML",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-    "tabBar": {
-      "color": "#7A7E83",
-      "selectedColor": "#3cc51f",
-      "borderStyle": "black",
-      "backgroundColor": "#ffffff",
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "Random"
-        },
-        {
-          "pagePath": "pages/submit/submit",
-          "text": "Submit your FML"
-        }
-      ]
-    }
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#00A3EC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_selected.png",
+        "text": "Random"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "iconPath": "image/form.png",
+        "selectedIconPath": "image/form_selected.png",
+        "text": "Submit your FML"
+      }
+    ]
+  }
 }

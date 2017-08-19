@@ -1,7 +1,9 @@
 // pages/submit/submit.js
 
 const AV = require('../../libs/av-weapp-min.js');
-const form = require('../../model/form.js');
+const Form = require('../../model/form.js');
+
+var app = getApp();
 
 Page({
 
@@ -49,7 +51,7 @@ Page({
       })
       // Redirect user if form submitted
       wx.reLaunch({
-        url: '/pages/index'
+        url: '/pages/index/index'
       });
   },
 

@@ -3,7 +3,7 @@
 var app = getApp();
 
 const AV = require('../../libs/av-weapp-min.js');
-const form = require('../../model/form.js');
+const Form = require('../../model/form.js');
 
 Page({
   data: {

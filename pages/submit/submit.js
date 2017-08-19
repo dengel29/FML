@@ -1,4 +1,8 @@
 // pages/submit/submit.js
+
+const AV = require('../../libs/av-weapp-min.js');
+const form = require('../../model/form.js');
+
 Page({
 
   /**
@@ -11,6 +15,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+
   onLoad: function () {
     console.log('form page loaded')
     var that = this
@@ -36,8 +41,20 @@ Page({
     // Local Storage
       console.log(e)
       var entry = e.detail.value.entry
-      // LeanCloud Permissions
 
+      // LeanCloud Permissions
+      //
+      new Form({
+        entry: entry,
+      })
+      // Redirect user if form submitted
+      wx.reLaunch({
+        url: '/pages/index'
+      });
+  }, 2000);
+console.log(Form)
+  }
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

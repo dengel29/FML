@@ -45,15 +45,12 @@ Page({
       // LeanCloud Permissions
       //
       new Form({
-        entry: entry,
+        story: entry,
       })
       // Redirect user if form submitted
       wx.reLaunch({
         url: '/pages/index'
       });
-  }, 2000);
-console.log(Form)
-  }
   },
 
   /**

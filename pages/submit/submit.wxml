@@ -1,2 +1,16 @@
 <!--pages/submit/submit.wxml-->
-<text>pages/submit/submit.wxml</text>
+
+<view class="container form">
+ <form bindsubmit="bindFormSubmit">
+  
+  <view class="user-input">
+   <text class="label-details">Tell your FML story:</text>
+   <view class="text-area-wrp">
+    <textarea class="input-height" name="entry" maxlength="-1" />
+   </view>
+  </view> 
+  
+  <button type="primary" form-type="submit" loading="{{loading}}">Send</button>
+
+ </form>
+</view>

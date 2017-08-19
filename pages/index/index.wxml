@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view class="header">
   <view class="h1-super-header">FML</view>
-  <view class="h1-header">Your Daily F**k Stories</view>
+  <image class="logo" src="../../image/logo.png"></image> 
 </view>
 
-<view class="container">
+<view class="card-container">
  <view class="wrap"> 
   <block wx:for="{{stories}}" wx:key="objectId">
    <view class="card">

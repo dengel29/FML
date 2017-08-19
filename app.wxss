@@ -30,7 +30,7 @@
   align-content: center;
   color: white;
   text-align: center;
-  font-size:100rpx; 
+  font-size:120rpx; 
   font-weight: bolder;
   padding: 30px;
 }

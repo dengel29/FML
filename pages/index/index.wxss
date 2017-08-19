@@ -15,6 +15,72 @@
   background-color: #1BA4E9;
   align-items: center;
   justify-content: space-around;
-  flex-direction: column;
+  flex-direction: row;
   padding: 10px 0px;
+}
+/**index.wxss**/
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+/**index.wxss**/
+.h1-header text {
+  box-shadow:inset 0px -10px rgba(255, 255, 255, 0.9);
+}
+/* Cards */
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+} 
+
+.wrap {
+  width: 80%;
+}
+.card {
+  display: flex;
+  min-height: 135px;
+  max-width: 335px;
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 2px;
+  border-left: 5px solid #32AAE1;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1); 
+}
+.card-description {
+  padding: 0 15px;
+  width: 90%;
+  color: black;
+  font-size: 27rpx;
+  line-height: 15px;
+}
+.quote {
+  padding-top:10px;
+}
+
+/* Upvote */
+.fml-upvote {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+  display: flex;
+  align-items: center;
+  height:40px;
+}
+.emoji-logo {
+  width:28px;
+  height:28px;
+}
+.counter {
+  font-size: 16px;
+  color: #32AAE1;
+  padding-right: 10px;
 }

@@ -7,7 +7,7 @@ const form = require('../../model/form.js');
 
 Page({
   data: {
-    stories: [{story: "Today, i missed my train"}, {story: "Today, i missed my bus"}],
+    stories: [{ story: "Today, i missed my train" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }, { story: "Today, i missed my bus" }],
     userInfo: {}
   },
   onLoad: function () {

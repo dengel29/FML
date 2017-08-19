@@ -6,11 +6,11 @@
 
 <view class="container">
  <view class="wrap"> 
-  <block wx:for="{{stories}}" wx:for-item="fml" wx:key="objectId">
+  <block wx:for="{{stories}}" wx:key="objectId">
    <view class="card">
     <view class="card-description">
      <view class="quote">
-     asdasdasdasdasdasd
+     {{item.story}}
      </view>
     </view>
    </view>

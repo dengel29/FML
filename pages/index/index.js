@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    stories: [{story: "Today, i missed my train"}, {story: "Today, i missed my bus"}],
     userInfo: {}
   },
   //事件处理函数

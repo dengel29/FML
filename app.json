@@ -1,12 +1,28 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/submit/submit"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "FML",
     "navigationBarTextStyle":"black"
-  }
+  },
+    "tabBar": {
+      "color": "#7A7E83",
+      "selectedColor": "#3cc51f",
+      "borderStyle": "black",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "Random"
+        },
+        {
+          "pagePath": "pages/submit/submit",
+          "text": "Submit your FML"
+        }
+      ]
+    }
 }

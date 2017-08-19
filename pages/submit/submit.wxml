@@ -1,11 +1,84 @@
 <!--pages/submit/submit.wxml-->
-<form bindsubmit="bindFormSubmit">
-  <view>About the workshop</view>
-  <view>Generally how was this workshop?</view>
-  <text>Hints: takeaway, speed, time, location, people...</text>
-  <view>
-   <textarea name="review" maxlength="-1" />
+
+<view class="header">
+ <view class="h1-header">Thanks for joining Le Wagon. Care to tell us about your experience?</view>
+</view>
+<view class="container form">
+ <form bindsubmit="bindFormSubmit">
+  <view class="header-form">
+   <view class="h2-form">About the workshop</view>
   </view>
-  <!-- Refer to the Github repository above if you want the complete form -->
-  <button type="primary" form-type="submit">Send</button>
+  <view class="user-input">
+   <view class="input-label">Generally how was this workshop?</view>
+   <text class="label-details">Hints: takeaway, speed, time, location, people...</text>
+   <view class="text-area-wrp">
+    <textarea class="input-height" name="review" maxlength="-1" />
+   </view>
+  </view> 
+  <view class="user-input">
+   <view class="input-label">Will you recommend this workshop?</view>
+   <view class="text-area-wrp">
+    <slider min="0" max="10" name='recommendation'show-value/>
+   </view>
+  </view>
+  <view class="header-form">
+   <view class="h2-form">About you now</view>
+  </view>
+  <view class="user-input">
+   <view class="input-label">Why do you want to learn to code?</view>
+   <text class="label-details">Hints: Build your own product, find a tech job...</text>
+   <view class="text-area-wrp">
+    <textarea class="input-height" name="learntocode" maxlength="-1" />
+   </view>
+  </view>
+  <view class="user-input">
+   <view class="input-label">Where did you hear about Le Wagon?</view>
+   <checkbox-group name="hearAbout" class="checkbox-margin">
+    <view class="checkbox">
+     <checkbox value="crew"/>From the crew
+    </view>
+    <view class="checkbox">
+     <checkbox value="student"/>From a student
+    </view>
+    <view class="checkbox">
+     <checkbox value="wom"/>Word of mouth
+    </view>
+    <view class="checkbox">
+     <checkbox value="meetup"/>Meetup
+    </view>
+    <view class="checkbox">
+     <checkbox value="wechat"/>WeChat
+    </view>
+    <view class="checkbox">
+     <checkbox value="google"/>Google
+    </view>
+    <view class="checkbox">
+     <checkbox value="other"/>Other
+    </view>
+   </checkbox-group>      
+  </view>
+  <view class="user-input">
+   <view class="input-label">Interested in a coding bootcamp?</view>
+   <text class="label-details">To upgrade your skills  and build your own product.</text>   
+   <checkbox-group name="interestedIn">   
+    <view class="checkbox checkbox-margin">
+     <checkbox value="yes" checked="true"/>Yes
+     <checkbox class="internal-checkbox-margin" value="no"/>No
+    </view>  
+   </checkbox-group> 
+  </view>
+  <view class="user-input">
+   <view class="input-label-target">Your contact details:</view>
+   <view class="text-area-wrp">
+    <textarea placeholder="name" class="input-contact" value="{{userInfo.nickName}}" name="nickName" auto-height />
+   </view>
+   <view class="text-area-wrp">
+    <textarea placeholder="email@email.com" name="email" class="input-contact" auto-height />
+   </view>
+   <view class="text-area-wrp">
+    <textarea placeholder="+86 185******" name="phone" class="input-contact" auto-height />
+   </view>             
+  </view>
+  <button type="primary" form-type="submit" loading="{{loading}}">Send</button>
  </form>
+</view>

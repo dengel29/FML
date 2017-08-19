@@ -5,14 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loading: false,
-  },
-  // Form Submission
-  bindFormSubmit: function (e) {
-    // Local storage
-    var review = e.detail.value.review
-    // ...
-  },
 
   /**
    * 生命周期函数--监听页面加载

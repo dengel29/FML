@@ -1,10 +1,21 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="header">
+  <view class="h1-super-header">FML</view>
+  <image class="logo" src="../../image/logo.png"></image> 
 </view>
+
+<view class="card-container">
+ <view class="wrap"> 
+  <block wx:for="{{stories}}" wx:key="objectId">
+   <view class="card">
+    <view class="card-description">
+     <view class="quote">
+     {{item.story}}
+     </view>
+    </view>
+   </view>
+  </block>
+ </view>
+</view>
+
+
